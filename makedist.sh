@@ -22,7 +22,7 @@ files='
 	hit.raw
 	intro.raw
 	pledit.exe
-	readme.txt
+	readme.md
 	soundset.exe
 	soundtst.exe
 	sp-edit.gif
@@ -42,7 +42,10 @@ set -ex
 rm -rf dist
 mkdir dist
 for f in $files; do
+	matched=false
 	for match in $(ls | grep -i "^$f\$"); do
+		matched=true
 		cp -v "$match" "dist/$f"
 	done
+	$matched
 done
