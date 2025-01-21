@@ -29,8 +29,8 @@ files='
 	sp-game.gif
 	sp-main.gif
 	sponge.exe
-	sponge.htm
 	sponge.ini
+	sponge.md
 	sponge.pcx
 	sponges.dat
 	throwing.raw

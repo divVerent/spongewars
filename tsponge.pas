@@ -4,7 +4,7 @@ interface
 
 uses KojakVGA, SMix;
 
-const VerStr = '2.2';
+const VerStr = '2.2a';
 
       sCircle = 0;
       sSquare = 1;
@@ -191,8 +191,8 @@ end;
 procedure FadeOut;
 var x: byte;
 begin
-     for x := 255 div 3 downto 0 do begin
-         FadePalette (x*3);
+     for x := 255 div 5 downto 0 do begin
+         FadePalette (x*5);
          Delay (14)
      end
 end;
@@ -200,8 +200,8 @@ end;
 procedure FadeIn;
 var x: byte;
 begin
-     for x := 0 to 255 div 3 do begin
-         FadePalette (x*3);
+     for x := 0 to 255 div 5 do begin
+         FadePalette (x*5);
          Delay (14)
      end
 end;

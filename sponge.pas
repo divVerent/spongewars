@@ -112,15 +112,15 @@ begin
      Checksum ('throwing.raw');
      Checksum ('sponge.pcx');
 
-     Dec (_Checksum, 12);
+     Dec (_Checksum, 14);
 
      if _Checksum <> 0 then begin
         writeln ('Invalid checksum! (', _Checksum, ' instead of 0)');
         writeln ('Please reinstall Sponge Wars. Maybe you have changed a file?');
         writeln ('If this doesn''t help, mail to divVerent+sponge@gmail.com');
         writeln ('for a correct SpongeWars distribution.');
-        writeln ('=== please wait 15 seconds... ===');
-        delay (15000);
+        writeln ('=== please wait 5 seconds... ===');
+        delay (5000);
      end;
 
      if GetOptionString ('?') = '+' then begin
@@ -265,6 +265,10 @@ begin
      FadeIn;
 
      x := 0;
+
+     { Discard possible buffered keypresses before main menu. }
+     while Keypressed do
+           Readkey;
 
      repeat
            if x = 0 then

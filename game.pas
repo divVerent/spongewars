@@ -115,8 +115,8 @@ end;
 
 procedure Height (N: Single);
 const factor = 600.0;
-      minfreq = 100;
-      maxfreq = 4000;
+      minfreq = 32;
+      maxfreq = 1024;
 begin
      if no_sound then exit;
      N := 192 - N;
