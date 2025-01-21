@@ -80,7 +80,7 @@ werden die physikalischen Gesetze wie Reibung beachtet.
 
 #### Hauptmenü
 
-<img src="sp-main.gif" width="480" height="300" />
+![menu screen](sp-main.gif)
 
 |              |                           |
 |--------------|---------------------------|
@@ -90,7 +90,7 @@ werden die physikalischen Gesetze wie Reibung beachtet.
 
 #### Spiel
 
-<img src="sp-game.gif" width="480" height="300" />
+![game screen](sp-game.gif)
 
 |                        |                                     |
 |------------------------|-------------------------------------|
@@ -108,7 +108,7 @@ werden die physikalischen Gesetze wie Reibung beachtet.
 
 #### Editor
 
-<img src="sp-edit.gif" width="480" height="300" />
+![editor screen](sp-edit.gif)
 
 ##### allgemein
 
