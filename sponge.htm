@@ -1,0 +1,139 @@
+<html>
+
+<body background="back.gif" bgcolor="#FFFFFF" text="#000000"
+link="#0000FF" vlink="#00007F" alink="#FF0000">
+
+<h1>Sponge Wars 2.0 (<a href="sponge.exe">Download</a>)</h1>
+
+<h2>Internet Version 2.0</h2>
+
+<h3>Beschreibung:</h3>
+
+<p>
+Bei Sponge Wars geht es darum, den Gegner mit &quot;Schw&auml;mmen&quot;
+zu bewerfen. Dieses Spielprinzip d&uuml;rfte bekannt sein (eine ganz
+einfache Variante ist GORILLA.BAS, aber Worms ist ein <i>kleines</i>
+;-) St&uuml;ck dar&uuml;ber). Dabei kann man jedoch verschiedene
+&quot;Schw&auml;mme&quot; im EDITOR bearbeiten. So kann man z.B. mit
+nassen, trockenen, TNT- und Spezialschw&auml;mmen werfen. Au&szlig;erdem
+werden die physikalischen Gesetze wie Reibung beachtet. </p>
+
+<h3>Kommandozeilenparameter:</h3>
+<PRE>
+/a-:      Kein Adlib-Sound
+/b-:      Kein SB-Sound
+/s-:      Kein Speaker-Sound (in der Win95-DOS-Box verwenden!)
+/dcreate: Bootdisk f&uuml;r Laufwerk A: erstellen (bei mir ohne Tastatur-
+          treiber 620 kB konventioneller Speicher), ohne CD-ROM- oder
+          ASPI-Treiber, nur HIMEM, EMM386 und eventuell KEYB GR
+</PRE>
+
+<h3>Versionen:</h3>
+<PRE>
+1.0  - eigentlich nur eine Beta
+1.1  - deutliche Verbesserungen (mit Editor)
+1.1a - Bugs mit Sound behoben, mit Speaker, quadratische Explosion
+1.2  - sternf&ouml;rmige Explosion, Speaker-Sounds verbessert
+1.2a - beschleunigt
+1.5&szlig; - WAVes auch auf dem Speaker
+1.5  - Bug mit Speaker behoben (RTE 100), Intro-Wavefile, Sounds verbessert
+1.6  - Bug in Stefan Goehler's (ansonsten guter) SoundLib entdeckt
+       (EMM386: Ung&uuml;ltiger DMA-Modus), jetzt mit E. Brodsky's SMIX,
+       mehrere Sounds gleichzeitig, Sounds verbessert, alle Spieler
+       fallen jetzt gleichzeitig, RAW- statt WAV-Dateien (kleiner),
+       Sounds im XMS (mit SB), Font jetzt in Datei (soll Probleme
+       gegeben haben...)
+geplant:
+     - Autodetect der Soundkarte (nicht integriert, mit IRQ und PORT keine
+       Probleme, wer wei&szlig;, wie man den DMA-Kanal der Soundkarte
+       erkennt?
+1.8  - jetzt kann man sich auch bewegen! Einfach [TAB] vor dem Werfen dr&uuml;cken.
+       Dann wird zuerst der entsprechende Schwamm geworfen. Anschlie&szlig; 
+       bewegt man sich an die Stelle, an der der Schwamm aufgekommen ist.
+       Die Farbe des Doppelpfeils hat folgende Bedeutung:
+       blau - man k&ouml;nnte sich mit diesem Schwamm bewegen (kostet n&auml;mlich
+              das Vierfache plus 10% der maximal m&ouml;glichen Lebensenergie)
+       gelb - man wird sich nach dem Werfen bewegen
+       grau - man kann sich mit diesem Schwamm leider nicht bewegen (zu teuer...)
+2.0  - jetzt kann man auch in Teams spielen
+</PRE>
+
+<h3>Systemanforderungen:</h3>
+
+<h4>Minimum:</h4>
+
+<ul>
+    <li>486er Prozessor</li>
+    <li>etwa 300 kB freier Platz ;-)</li>
+    <li>MS-DOS 5.0+ oder DOS-Box</li>
+    <li>HIMEM.SYS</li>
+    <li>VGA-kompatible Grafikkarte (sind nicht alle, bei einer
+        2D/3D-Kombikarte von einem Freund gab es Probleme)</li>
+    <li>PC-Qu&auml;ker</font></li>
+</ul>
+
+<h4>Gut spielbar ab:</h4>
+
+<ul>
+    <li>Pentium ab 133 MHz oder AMD K6</li>
+    <li>etwa 500 kB freier Platz :-)</li>
+    <li>MS-DOS oder MS-DOS-Modus</li>
+    <li>HIMEM.SYS</li>
+    <li>gute SVGA-Karte</li>
+    <li>Soundkarte mit BLASTER=A... I. D. Umgebungsvariable (macht Windoof
+        ;-) normalerweise von alleine). Diese Variable kann
+        mittels SoundSet (nicht empfohlen) eingestellt werden.</li>
+</ul>
+
+<h3>Tastenbelegung</h3>
+
+<h4>Hauptmen&uuml;</h4>
+
+<p><img src="sp-main.gif" width="480" height="300"></p>
+
+<table border="1" cellpadding="2" cellspacing="0">
+    <tr><td>Hoch/Runter</td><td>Eintrag ausw&auml;hlen</td></tr>
+    <tr><td>Links/Rechts</td><td>Zahlenwert einstellen</td></tr>
+    <tr><td>Eingabe</td><td>Umschalten oder Ausf&uuml;hren</td></tr>
+</table>
+
+<h4>Spiel</h4>
+
+<p><img src="sp-game.gif" width="480" height="300"></p>
+
+<table border="1" cellpadding="2" cellspacing="0">
+    <tr><td>Links/Rechts</td><td>Winkel, Feineinstellung</td></tr>
+    <tr><td>--- mit Ctrl</td><td>Winkel, Grobeinstellung</td></tr>
+    <tr><td>Hoch/Runter</td><td>Geschwindigkeit, Feineinstellung</td></tr>
+    <tr><td>BildAuf/BildAb</td><td>Geschwindigkeit, Grobeinstellung</td></tr>
+    <tr><td>--- mit Ctrl</td><td>Geschwindigkeit, Schnelleinstellung</td></tr>
+    <tr><td>+/-</td><td>Schwamm w&auml;hlen</td></tr>
+    <tr><td>Leertaste</td><td>W E R F E N ! ! !</td></tr>
+    <tr><td>beim Wurf / und *</td><td>Zeitraffer 1-10x</td></tr>
+    <tr><td>beim Wurf andere Taste</td><td>Zeitraffer 10x</td></tr>
+    <tr><td>[E]</td><td>Editor aufrufen</td></tr>
+    <tr><td>[Esc]</td><td>Abbrechen und zum Hauptmen&uuml;</td></tr>
+</table>
+
+<h4>Editor</h4>
+
+<p><img src="sp-edit.gif" width="480" height="300"></p>
+
+<h5>allgemein</h5>
+
+<table border="1" cellpadding="2" cellspacing="0">
+    <tr><td>Links/Rechts</td><td>Feineinstellung</td></tr>
+    <tr><td>--- mit Ctrl</td><td>Grobeinstellung</td></tr>
+    <tr><td>Hoch/Runter</td><td>Wert ausw&auml;hlen</td></tr>
+    <tr><td>[ESC]</td><td>Zur&uuml;ck zum Spiel</td></tr>
+</table>
+
+<h5>wenn auf 'SpongeNum' (erstes Feld)</h5>
+
+<table border="1" cellpadding="2" cellspacing="0">
+    <tr><td>[TAB]</td><td>Laden</td></tr>
+    <tr><td>Eingabe</td><td>Speichern</td></tr>
+    <tr><td>Entf</td><td>L&ouml;schen</td></tr>
+</table>
+</body>
+</html>
