@@ -1,3 +1,4 @@
+{$N+,G+}
 uses TSponge, Game, KojakVGA, SMix, InitSnd, SpEdit, DOS;
 
 var _Checksum: byte;
@@ -104,17 +105,14 @@ const walls: array [boolean] of string [8] = ('BOUNCING', 'WRAPPING');
 
 begin
      Checksum ('');
-     Checksum ('bounce.wav');
      Checksum ('bounce.raw');
-     Checksum ('hit.wav');
      Checksum ('hit.raw');
-     Checksum ('intro.wav');
      Checksum ('intro.raw');
-     Checksum ('explode.wav');
      Checksum ('explode.raw');
+     Checksum ('throwing.raw');
      Checksum ('sponge.pcx');
 
-     Dec (_Checksum, 143);
+     Dec (_Checksum, 12);
 
      if _Checksum <> 0 then begin
         writeln ('Invalid checksum! (', _Checksum, ' instead of 0)');

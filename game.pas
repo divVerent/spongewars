@@ -1,4 +1,4 @@
-{$I-,O+}
+{$I-,O+,N+,G+}
 
 unit game;
 
@@ -14,15 +14,29 @@ uses KojakVGA, TSponge, SMix, SpEdit, Speaker;
 
 function fm_detect: boolean;
 begin
-     fm_detect := false
+     fm_detect := blaster_avail
 end;
 
+const Sound4Size: longint = 0;
+
 procedure fm_play_tone(ch, freq, vol: integer);
+var s: longint;
 begin
+     if Sound4Size = 0 then
+        Sound4Size := Sounds[4]^.SoundSize;
+     s := (longint(SamplingRate) + random(freq)) div freq;
+     if s < 2 then
+        s := 2;
+     if s > Sound4Size then
+        s := Sound4Size;
+     StopSound(4);
+     Sounds[4]^.SoundSize := s;
+     StartSound(Sounds[4], 4, true)
 end;
 
 procedure fm_reset;
 begin
+     StopSound(4)
 end;
 
 procedure fm_load_patch(n, patch: integer);
@@ -33,6 +47,7 @@ const fm_get_patch_sine = 0;
 
 procedure fm_stop_tone(ch: integer);
 begin
+     StopSound(4)
 end;
 
 type NoArgsProc = procedure;

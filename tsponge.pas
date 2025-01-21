@@ -1,4 +1,4 @@
-unit TSponge; {$I-,O+}
+unit TSponge; {$I-,O+,N+,G+}
 
 interface
 
@@ -14,7 +14,7 @@ const VerStr = '2.0a';
       blaster_avail: boolean = false;
 
 
-var Sounds: array[0..3] of PSound;
+var Sounds: array[0..4] of PSound;
     p: PaletteType;
 
 

@@ -1,4 +1,4 @@
-unit SpEdit;    {$I-,O+}
+unit SpEdit;    {$I-,O+,N+,G+}
 
 interface
 

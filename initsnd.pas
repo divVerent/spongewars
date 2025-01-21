@@ -1,4 +1,4 @@
-unit InitSnd;
+unit InitSnd; {$N+,G+}
 interface
   function InitBlaster: String;
   procedure ExitBlaster;
@@ -42,7 +42,7 @@ implementation
     var
       i: byte;
     begin
-      for i := 0 to 3 do
+      for i := 0 to 4 do
         if Sounds[i] <> nil then FreeSound(Sounds[i]);
       if SharedEMB then ShutdownSharing;
       ExitProc := OldExitProc; {Chain to next exit procedure}
@@ -91,6 +91,7 @@ implementation
                   LoadSound (Sounds[1], 'HIT.RAW');
                   LoadSound (Sounds[2], 'EXPLODE.RAW');
                   LoadSound (Sounds[3], 'INTRO.RAW');
+                  LoadSound (Sounds[4], 'THROWING.RAW');
 
                   OldExitProc := ExitProc;
                   ExitProc := @OurExitProc;
@@ -117,7 +118,7 @@ implementation
       ShutdownMixing;
       ShutdownSB;
 
-      for i := 0 to 3 do
+      for i := 0 to 4 do
         FreeSound(Sounds[i]);
       if SharedEMB then ShutdownSharing;
       writeln
