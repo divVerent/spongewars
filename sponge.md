@@ -1,6 +1,6 @@
-# Sponge Wars 2.0 ([Download](sponge.exe))
+# Sponge Wars 2.2a ([Download](sponge.exe))
 
-## Internet Version 2.0
+## Internet Version 2.2a
 
 ### Beschreibung:
 
@@ -50,8 +50,7 @@ werden die physikalischen Gesetze wie Reibung beachtet.
     2.0  - jetzt kann man auch in Teams spielen
     2.1a - ???
     2.2  - Release auf GitHub
-    2.3  - Source-Code in Ordnung gebracht, FM-Sound durch Digital-Sound ersetzt
-    2.3a - neuer Digital-Sound, und schnellere Fade-Effekte
+    2.2a - Source-Code in Ordnung gebracht, FM-Sound durch Digital-Sound ersetzt
 
 ### Systemanforderungen:
 

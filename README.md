@@ -12,4 +12,4 @@ This game was made for Turbo Pascal 7.0, using the `kojakvga` (version 3.5) and
 # Running
 
 * Now you can run `sponge.exe`.
-* As for how the game works, see [sponge.htm](sponge.htm).
+* As for how the game works, see [sponge.md](sponge.md).
