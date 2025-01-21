@@ -832,25 +832,25 @@ begin
                       #$84: betrag := betrag + 100;
                       #$76: betrag := betrag - 100;
                       #$0D, #$20: ok := true;
-                      '+': begin
-                                Inc (MySponge);
-                                mysponge := (mysponge + countsponges) mod countsponges;
-                                getSponge(mysponge, thissponge);
-                                while thissponge.cost >= players[p].MaxJoule do begin
-                                      Inc (MySponge);
-                                      mysponge := (mysponge + countsponges) mod countsponges;
-                                      getSponge(mysponge, thissponge)
-                                end
+                      '+', '=': begin
+                                     Inc (MySponge);
+                                     mysponge := (mysponge + countsponges) mod countsponges;
+                                     getSponge(mysponge, thissponge);
+                                     while thissponge.cost >= players[p].MaxJoule do begin
+                                           Inc (MySponge);
+                                           mysponge := (mysponge + countsponges) mod countsponges;
+                                           getSponge(mysponge, thissponge)
+                                     end
                       end;
-                      '-': begin
-                                Dec (MySponge);
-                                mysponge := (mysponge + countsponges) mod countsponges;
-                                getSponge(mysponge, thissponge);
-                                while thissponge.Cost >= players[p].MaxJoule do begin
-                                      Dec (MySponge);
-                                      mysponge := (mysponge + countsponges) mod countsponges;
-                                      getSponge(mysponge, thissponge)
-                                end
+                      '-', '_': begin
+                                     Dec (MySponge);
+                                     mysponge := (mysponge + countsponges) mod countsponges;
+                                     getSponge(mysponge, thissponge);
+                                     while thissponge.Cost >= players[p].MaxJoule do begin
+                                           Dec (MySponge);
+                                           mysponge := (mysponge + countsponges) mod countsponges;
+                                           getSponge(mysponge, thissponge)
+                                     end
                       end;
                       'e': mysponge := countsponges;    {will lead to editor}
                       #$09:  domove := not domove;
