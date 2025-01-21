@@ -4,7 +4,7 @@ interface
 
 uses KojakVGA, SMix;
 
-const VerStr = '2.0a';
+const VerStr = '2.2';
 
       sCircle = 0;
       sSquare = 1;
