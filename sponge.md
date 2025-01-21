@@ -1,4 +1,4 @@
-# Sponge Wars 2.2a ([Download](sponge.exe))
+# Sponge Wars 2.2a ([Download](https://github.com/divVerent/spongewars/releases))
 
 ## Internet Version 2.2a
 
