@@ -367,7 +367,7 @@ begin
         end;
         writeln ('Runtime error ', exitcode, ' occured at address ', hexaddr (erroraddr), '.');
         writeln ('Error: ', errorstring (exitcode));
-        writeln ('Please contact me per email at rpolzer@gmx.de!');
+        writeln ('Please contact me per email at divVerent+sponge@gmail.com!');
         writeln ('Version: ', VerStr)
      end;
      halt

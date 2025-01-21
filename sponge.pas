@@ -119,7 +119,7 @@ begin
      if _Checksum <> 0 then begin
         writeln ('Invalid checksum! (', _Checksum, ' instead of 0)');
         writeln ('Please reinstall Sponge Wars. Maybe you have changed a file?');
-        writeln ('If this doesn''t help, mail to rpolzer@gmx.de');
+        writeln ('If this doesn''t help, mail to divVerent+sponge@gmail.com');
         writeln ('for a correct SpongeWars distribution.');
         writeln ('=== please wait 15 seconds... ===');
         delay (15000);
@@ -204,8 +204,8 @@ begin
 
      PrintAtOutlined (10, 20, 'SPONGE WARS - Version '+VerStr, 14, 1);
      PrintAtOutlined (10, 30, '  by Rudolf Polzer', 14, 1);
-     PrintAtOutlined (10, 40, '  web:  http://rpolzer.home.pages.de', 14, 1);
-     PrintAtOutlined (10, 50, '  mail: rpolzer@gmx.de', 14, 1);
+     PrintAtOutlined (10, 40, '  web:  https://divVerent.github.io', 14, 1);
+     PrintAtOutlined (10, 50, '  mail: divVerent+sponge@gmail.com', 14, 1);
      PrintAtOutlined (10, 60, 'uses S.Tunstall''s KOJAKVGA', 14, 1);
      PrintAtOutlined (10, 70, ' and E.Brodsky''s SMIX', 14, 1);
      PrintAtOutlined (10, 90, 'Checking for blaster and XMS...', 14, 1);
@@ -254,8 +254,8 @@ begin
 
      PrintAtOutlined (10, 20, 'SPONGE WARS - Version '+VerStr, 14, 1);
      PrintAtOutlined (10, 30, '  by Rudolf Polzer', 14, 1);
-     PrintAtOutlined (10, 40, '  web:  http://rpolzer.home.pages.de', 14, 1);
-     PrintAtOutlined (10, 50, '  mail: rpolzer@gmx.de', 14, 1);
+     PrintAtOutlined (10, 40, '  web:  https://divVerent.github.io', 14, 1);
+     PrintAtOutlined (10, 50, '  mail: divVerent+sponge@gmail.com', 14, 1);
      PrintAtOutlined (10, 60, 'uses S.Tunstall''s KOJAKVGA', 14, 1);
      PrintAtOutlined (10, 70, ' and E.Brodsky''s SMIX', 14, 1);
 
@@ -343,8 +343,8 @@ begin
 
                               PrintAtOutlined (10, 20, 'SPONGE WARS - Version '+VerStr, 14, 1);
                               PrintAtOutlined (10, 30, '  by Rudolf Polzer', 14, 1);
-                              PrintAtOutlined (10, 40, '  web:  http://rpolzer.home.pages.de', 14, 1);
-                              PrintAtOutlined (10, 50, '  mail: rpolzer@gmx.de', 14, 1);
+                              PrintAtOutlined (10, 40, '  web:  https://divVerent.github.io', 14, 1);
+                              PrintAtOutlined (10, 50, '  mail: divVerent+sponge@gmail.com', 14, 1);
                               PrintAtOutlined (10, 60, 'uses S.Tunstall''s KOJAKVGA', 14, 1);
                               PrintAtOutlined (10, 70, ' and E.Brodsky''s SMIX', 14, 1);
 
