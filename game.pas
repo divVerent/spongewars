@@ -8,7 +8,41 @@ procedure Main (numplayers, numteams: byte; walls, ROOF, sound: boolean; ROOFdir
 
 implementation
 
-uses Timer, KojakVGA, TSponge, SMix, SpEdit, FM, Speaker;
+uses KojakVGA, TSponge, SMix, SpEdit, Speaker;
+
+{ Missing units: FM.TPU, TIMER.TPU. Reimplementing here. }
+
+function fm_detect: boolean;
+begin
+     fm_detect := false
+end;
+
+procedure fm_play_tone(ch, freq, vol: integer);
+begin
+end;
+
+procedure fm_reset;
+begin
+end;
+
+procedure fm_load_patch(n, patch: integer);
+begin
+end;
+
+const fm_get_patch_sine = 0;
+
+procedure fm_stop_tone(ch: integer);
+begin
+end;
+
+type NoArgsProc = procedure;
+
+function GetProcTime(p: NoArgsProc; goalMicros: longint): longint;
+begin
+     GetProcTime := 0;
+end;
+
+{ End of dummy implementations. }
 
 procedure AllFallDown (dodamage: boolean); forward;
 procedure FallDown (p: byte; dodamage: boolean); forward;
